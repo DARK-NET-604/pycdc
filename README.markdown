@@ -29,6 +29,24 @@ https://github.com/zrax/pycdc
   * To run tests (on \*nix or MSYS), run `make check JOBS=4` (optional
     `FILTER=xxxx` to run only certain tests)
 
+# Command  :
+````
+pkg install cmake
+pkg install clang
+pkg install make
+pkg install git
+rm -rf pycdc
+git clone https://github.com/DARK-NET-604/pycdc
+cd pycdc
+ls
+chmod 777 pycdc.cpp
+chmod 777 pycdas.cpp
+cmake .
+make
+mv pycdc $PREFIX/bin
+mv pycdas $PREFIX/bin
+````
+
 ## Usage
 **To run pycdas**, the PYC Disassembler:
 `./pycdas [PATH TO PYC FILE]`
